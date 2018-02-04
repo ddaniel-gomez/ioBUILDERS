@@ -1,0 +1,16 @@
+name = "Atomic"
+license = "MIT"
+description = "Custom theme for ioBUILDERS"
+homepage = "https://github.com/ddaniel-gomez"
+tags = ["company", "products", "opensource"]
+features = ["github", "images" ]
+min_version= 0.1
+
+[author]
+     name = "Daniel Gomez"
+
+[original]
+    author =  "Daniel Gomez"
+    homepage = "https://github.com/ddaniel-gomez"
+    #repo = "https://github.com/ddaniel-gomez"
+
