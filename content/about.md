@@ -5,3 +5,4 @@ draft: false
 ---
 
 Content about us
+<strong>content</strong>

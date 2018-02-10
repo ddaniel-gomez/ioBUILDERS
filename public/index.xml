@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ioBUILDERS</title>
+    <link>/</link>
+    <description>Recent content on ioBUILDERS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 ioBUILDERS -- All rights reserved.</copyright>
+    <lastBuildDate>Sun, 04 Feb 2018 09:24:49 +0100</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>/post/my-first-post/</link>
+      <pubDate>Sun, 04 Feb 2018 09:24:49 +0100</pubDate>
+      
+      <guid>/post/my-first-post/</guid>
+      <description>content post</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sun, 04 Feb 2018 09:10:04 +0100</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Content about us</description>
+    </item>
+    
+  </channel>
+</rss>
