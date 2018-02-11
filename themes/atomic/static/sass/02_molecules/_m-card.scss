@@ -1,0 +1,10 @@
+/*_m-card.scss*/
+
+.card {
+	width: auto;
+	padding: 30px;
+	border-radius: $radius;
+	background-image: linear-gradient(72deg, #f0f0f0, $aux-color);
+	margin: 10px;
+	box-shadow: 0 0 5px $shadow;
+}

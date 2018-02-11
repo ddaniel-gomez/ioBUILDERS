@@ -1,109 +1,134 @@
 /*base.sass*/
 /*@import '_tools/_t-reset';*/
 /*color*/
-@second_color : white;
-@second_text_color : #333;
-@header_color : #f8f8f8
+/*@second_color: white;
+@second_text_color: #333;
+
+@header_color: #f8f8f8
 @header_text_color: rgb(51, 51, 51);
-@header_link_color : #777;
-@header_link_hover_color : rgb(51, 51, 51);
+
+@header_link_color: #777;
+@header_link_hover_color: rgb(51, 51, 51);*/
+/*_s-vars.scss*/
 /*_a-buttons.scss*/
 /*_m-footer.scss*/
-/* line 3, ../sass/_molecules/_m-footer.scss */
+/* line 3, ../sass/02_molecules/_m-footer.scss */
 footer {
   padding: 50px 0;
-  background-color: #f8f8f8;
+  background-color: #2C3E50;
+  color: #e3e3e3;
 }
-/* line 7, ../sass/_molecules/_m-footer.scss */
+/* line 8, ../sass/02_molecules/_m-footer.scss */
 footer p.copyright {
   margin: 15px 0 0;
 }
 
 /*_m-header.scss*/
-/* line 3, ../sass/_molecules/_m-header.scss */
+/* line 3, ../sass/02_molecules/_m-header.scss */
 .intro-header {
   padding-top: 40px;
   text-align: center;
   color: #f8f8f8;
 }
 
-/* line 9, ../sass/_molecules/_m-header.scss */
+/* line 9, ../sass/02_molecules/_m-header.scss */
 .header-container {
   width: 100%;
 }
-/* line 12, ../sass/_molecules/_m-header.scss */
+/* line 12, ../sass/02_molecules/_m-header.scss */
 .header-container .intro-image {
   height: 100%;
   min-height: 380px;
   margin-top: 20px;
-  background: url(../img/intro-bg.svg) no-repeat center center;
-  background-size: 280px;
+  background: url("../images/ioBUILDERS-white.svg") no-repeat center;
 }
-/* line 20, ../sass/_molecules/_m-header.scss */
+/* line 19, ../sass/02_molecules/_m-header.scss */
 .header-container .intro-message {
-  margin-top: 100px;
-  color: #333333;
+  margin-top: 150px;
+  color: #e3e3e3;
   text-align: left;
 }
-/* line 25, ../sass/_molecules/_m-header.scss */
+/* line 24, ../sass/02_molecules/_m-header.scss */
 .header-container .intro-message > h1 {
   font-family: -apple-system-subheadline, 'HelveticaNeue-UltraLight', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 5em;
+  font-size: 2.3em;
 }
-/* line 30, ../sass/_molecules/_m-header.scss */
+/* line 29, ../sass/02_molecules/_m-header.scss */
 .header-container .intro-message > h3 {
   font-family: -apple-system-headline, 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, sans-serif;
 }
-/* line 34, ../sass/_molecules/_m-header.scss */
+/* line 33, ../sass/02_molecules/_m-header.scss */
 .header-container .intro-message .intro-divider {
-  width: 400px;
-  border-top: 1px solid #f8f8f8;
+  width: 80%;
+  border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+/*_m-card.scss*/
+/* line 3, ../sass/02_molecules/_m-card.scss */
+.card {
+  width: auto;
+  padding: 30px;
+  border-radius: 2px;
+  background-image: linear-gradient(72deg, #f0f0f0, #BDC3C7);
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(66, 66, 66, 0.2);
+}
+
+/*_o-card-group.scss*/
+/* line 3, ../sass/03_organisms/_o-card-group.scss */
+.card-group {
+  display: flex;
+}
+
 /*_t-container.scss*/
-/* line 3, ../sass/_templates/_t-container.scss */
+/* line 3, ../sass/04_templates/_t-container.scss */
 .container {
   width: 900px;
   line-height: 1.2em;
 }
-/* line 7, ../sass/_templates/_t-container.scss */
+/* line 7, ../sass/04_templates/_t-container.scss */
 .container ul {
   line-height: 1.6em;
 }
-/* line 11, ../sass/_templates/_t-container.scss */
+/* line 11, ../sass/04_templates/_t-container.scss */
 .container pre {
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 1.6em;
 }
-/* line 17, ../sass/_templates/_t-container.scss */
+/* line 17, ../sass/04_templates/_t-container.scss */
 .container h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 /*_p-index.scss*/
-/* line 3, ../sass/_pages/_p-index.scss */
+/* line 3, ../sass/05_pages/_p-index.scss */
 section {
   min-height: 77vh;
 }
 
-/* line 11, ../sass/base.scss */
-body,
-html {
+/* line 19, ../sass/base.scss */
+body, html {
   width: 100%;
   height: 100%;
   font-size: 16px;
+  color: #333;
+  background-color: #2574A9;
 }
 
-/* line 18, ../sass/base.scss */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* line 27, ../sass/base.scss */
+body, h1, h2, h3, h4, h5, h6 {
   font-family: -apple-system-headline, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* line 31, ../sass/base.scss */
+h1, h2 {
+  color: #2C3E50;
+}
+
+/* line 32, ../sass/base.scss */
+h3 {
+  color: #e3e3e3;
 }
