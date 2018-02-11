@@ -83,7 +83,13 @@ footer p.copyright {
   margin-bottom: 10px;
 }
 
-/* line 10, ../sass/base.scss */
+/*_p-index.scss*/
+/* line 3, ../sass/_pages/_p-index.scss */
+section {
+  min-height: 77vh;
+}
+
+/* line 11, ../sass/base.scss */
 body,
 html {
   width: 100%;
@@ -91,7 +97,7 @@ html {
   font-size: 16px;
 }
 
-/* line 17, ../sass/base.scss */
+/* line 18, ../sass/base.scss */
 body,
 h1,
 h2,
