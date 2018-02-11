@@ -1,7 +1,7 @@
-<section id="services">
+<section id="blog">
 
     <!-- Page Content -->
-    {{ range $index, $element :=  where .Data.Pages "Section" "in" "services" }}
+    {{ range $index, $element :=  where .Data.Pages "Section" "in" "post" }}
         {{ if modBool $index 2 }}
         <div class="content-section-a">
         {{ else }}
