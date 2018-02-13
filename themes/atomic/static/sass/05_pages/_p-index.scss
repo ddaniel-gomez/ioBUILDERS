@@ -7,14 +7,26 @@ section {
 	.intro-header {
 		&:after{
 			content: '';
-			position: absolute;
-			left: -300px;
-			top: 5px;
-			width: 600px;
-			height: 600px;
+			position: fixed;
+			left: -40vh;
+			top: 40px;
+			width: 98vh;
+			height: 98vh;
 			background: url('../images/world.svg') no-repeat;
 			opacity: .7;
 			animation: rotate 250s infinite;
+			animation-timing-function: linear; 
+		}
+		&:before{
+			content: '';
+			position: fixed;
+			right: -220vh;
+			top: 80px;
+			width: 400vh;
+			height: 400vh;
+			background: url('../images/world.svg') no-repeat;
+			opacity: .3;
+			animation: rotate-inverse 550s infinite;
 			animation-timing-function: linear; 
 		}
 	}
@@ -26,5 +38,14 @@ section {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-inverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

@@ -8,7 +8,7 @@ copyright = "&copy; 2018 ioBUILDERS -- All rights reserved."
   #github = "https://github.com/ddaniel-gomez"
   #email = "ddaniel.gomez@gmail.com"
 [params]
-    description = "ioBUILDERS | A cool venture builder"
+    description = "Take the challenge"
     author_url = "https://www.sadmedia.com"
     #google_analytics = "UA-xxxx"
     #project_url = ""

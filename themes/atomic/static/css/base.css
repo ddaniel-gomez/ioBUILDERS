@@ -29,8 +29,10 @@ footer {
   padding: 50px 0;
   background-color: #2C3E50;
   color: #e3e3e3;
+  position: relative;
+  z-index: 1;
 }
-/* line 8, ../sass/02_molecules/_m-footer.scss */
+/* line 10, ../sass/02_molecules/_m-footer.scss */
 footer p.copyright {
   margin: 0;
 }
@@ -41,9 +43,9 @@ footer p.copyright {
   width: 60%;
   padding: 30px;
   border-radius: 2px;
-  background-image: linear-gradient(72deg, #f0f0f0, #BDC3C7);
+  background-image: linear-gradient(135deg, rgba(240, 240, 240, 0.8), rgba(189, 195, 199, 0.8));
   margin: 10px;
-  box-shadow: 0 0 5px rgba(66, 66, 66, 0.2);
+  box-shadow: 0 0 5px rgba(66, 66, 66, 0.8);
 }
 /* line 10, ../sass/02_molecules/_m-card.scss */
 .card.a {
@@ -64,13 +66,13 @@ footer p.copyright {
 .card h3 {
   color: #2574A9;
   letter-spacing: -2px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 /*_m-menu.scss*/
 /* line 3, ../sass/02_molecules/_m-menu.scss */
 .navbar-default {
-  background-color: #2f90d2;
+  background-color: #2C3E50;
   border: 0;
 }
 /* line 7, ../sass/02_molecules/_m-menu.scss */
@@ -118,23 +120,25 @@ footer p.copyright {
   min-height: 380px;
   margin-top: 20px;
   background: url("../images/ioBUILDERS-white.svg") no-repeat center;
+  position: relative;
+  z-index: 1;
 }
-/* line 19, ../sass/03_organisms/_o-header.scss */
+/* line 21, ../sass/03_organisms/_o-header.scss */
 .header-container .intro-message {
-  margin-top: 177px;
+  margin-top: 165px;
   color: #e3e3e3;
   text-align: left;
 }
-/* line 24, ../sass/03_organisms/_o-header.scss */
+/* line 26, ../sass/03_organisms/_o-header.scss */
 .header-container .intro-message > h1 {
-  font-size: 2.3em;
+  font-size: 3em;
   letter-spacing: -4px;
 }
-/* line 25, ../sass/03_organisms/_o-header.scss */
+/* line 27, ../sass/03_organisms/_o-header.scss */
 .header-container .intro-message > h3 {
   letter-spacing: -2px;
 }
-/* line 27, ../sass/03_organisms/_o-header.scss */
+/* line 29, ../sass/03_organisms/_o-header.scss */
 .header-container .intro-message .intro-divider {
   width: 80%;
   border-top: 1px solid #e3e3e3;
@@ -146,7 +150,6 @@ footer p.copyright {
 /*_o-card-group.scss*/
 /* line 3, ../sass/03_organisms/_o-card-group.scss */
 .card-group {
-  background-color: #e3e3e3;
   overflow: hidden;
 }
 
@@ -179,14 +182,27 @@ section {
 /* line 8, ../sass/05_pages/_p-index.scss */
 section .intro-header:after {
   content: '';
-  position: absolute;
-  left: -300px;
-  top: 5px;
-  width: 600px;
-  height: 600px;
+  position: fixed;
+  left: -40vh;
+  top: 40px;
+  width: 98vh;
+  height: 98vh;
   background: url("../images/world.svg") no-repeat;
   opacity: .7;
   animation: rotate 250s infinite;
+  animation-timing-function: linear;
+}
+/* line 20, ../sass/05_pages/_p-index.scss */
+section .intro-header:before {
+  content: '';
+  position: fixed;
+  right: -220vh;
+  top: 80px;
+  width: 400vh;
+  height: 400vh;
+  background: url("../images/world.svg") no-repeat;
+  opacity: .3;
+  animation: rotate-inverse 550s infinite;
   animation-timing-function: linear;
 }
 
@@ -196,6 +212,14 @@ section .intro-header:after {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes rotate-inverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 /* line 22, ../sass/base.scss */

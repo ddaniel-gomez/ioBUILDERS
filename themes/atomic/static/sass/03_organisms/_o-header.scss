@@ -14,14 +14,16 @@
 	    min-height: 380px;
 	    margin-top: 20px;
 	    background: url('../images/ioBUILDERS-white.svg') no-repeat center;
+	    position: relative;
+		z-index: 1;
 	}
 
 	.intro-message {
-	    margin-top: 177px;
+	    margin-top: 165px;
 	    color: $white;
 	    text-align: left;
 
-	    & > h1 {font-size: 2.3em; letter-spacing: -4px;}
+	    & > h1 {font-size: 3em; letter-spacing: -4px;}
 	    & > h3 {letter-spacing: -2px;}
 
 		.intro-divider {

@@ -4,6 +4,8 @@ footer {
     padding: 50px 0;
     background-color: $secondary-color;
     color: $white;
+    position: relative;
+	z-index: 1;
 
     p.copyright {
 	    margin: 0;
