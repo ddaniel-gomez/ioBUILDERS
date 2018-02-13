@@ -1,5 +1,30 @@
 /*_p-index.scss*/
 
 section {
-	min-height: 77vh;
+	@extend .cf;
+	min-height: 95vh;
+
+	.intro-header {
+		&:after{
+			content: '';
+			position: absolute;
+			left: -300px;
+			top: 5px;
+			width: 600px;
+			height: 600px;
+			background: url('../images/world.svg') no-repeat;
+			opacity: .7;
+			animation: rotate 250s infinite;
+			animation-timing-function: linear; 
+		}
+	}
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

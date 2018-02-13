@@ -1,16 +1,19 @@
 /*base.sass*/
 
 /*@import '_tools/_t-reset';*/
+@import '_tools/_t-clear-fix';
+
 @import '00_settings/_s-color',
 		'00_settings/_s-vars';
 
 @import '01_atoms/_a-buttons';
 
 @import '02_molecules/_m-footer',
-		'02_molecules/_m-header', 
-		'02_molecules/_m-card';
+		'02_molecules/_m-card',
+		'02_molecules/_m-menu';
 
-@import '03_organisms/_o-card-group';
+@import '03_organisms/_o-header', 
+		'03_organisms/_o-card-group';
 
 @import '04_templates/_t-container';
 
@@ -25,7 +28,7 @@ body, html {
 }
 
 body, h1, h2, h3, h4, h5, h6 {
-    font-family: -apple-system-headline, 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Montserrat', -apple-system-headline, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 h1, h2 {color: $secondary-color;}

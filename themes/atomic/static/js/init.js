@@ -1,1 +1,3 @@
 /*init.js*/
+
+AOS.init();

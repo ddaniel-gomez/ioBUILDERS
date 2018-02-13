@@ -1,2 +1,33 @@
 /*_m-menu.scss*/
 
+.navbar-default {
+	background-color: lighten($primary-color, 10%);
+	border: 0;
+
+	.navbar-toggle {
+		margin-right: 0;
+		border: 0;
+		
+		span.icon-bar {
+			background-color: $white;
+		}
+
+		&:hover{
+			background-color: $white;
+			span.icon-bar {
+				background-color: lighten($primary-color, 10%);
+			}
+		}
+	}
+
+	.navbar-brand {
+		background: url('../images/ioBUILDERS-text-white.svg') no-repeat center;
+		width: 200px;
+	}
+
+	.navbar-nav {
+		& > li > a {
+			color: #fff;
+		}
+	}
+}

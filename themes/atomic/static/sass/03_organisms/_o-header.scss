@@ -17,23 +17,19 @@
 	}
 
 	.intro-message {
-	    margin-top: 150px;
+	    margin-top: 177px;
 	    color: $white;
 	    text-align: left;
 
-	    & > h1 {
-		    font-family: -apple-system-subheadline, 'HelveticaNeue-UltraLight', 'Helvetica Neue', Helvetica, sans-serif;
-		    font-size: 2.3em;
-		}
-
-	    & > h3 {
-		    font-family: -apple-system-headline, 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, sans-serif;
-		}
+	    & > h1 {font-size: 2.3em; letter-spacing: -4px;}
+	    & > h3 {letter-spacing: -2px;}
 
 		.intro-divider {
 		    width: 80%;
 		    border-top: 1px solid $white;
 		    border-bottom: 1px solid rgba(0,0,0,0.2);
+		    float: left;
+		    margin: 8px 0 0 0;
 		}
 	}
 }

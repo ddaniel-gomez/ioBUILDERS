@@ -1,5 +1,17 @@
 /*base.sass*/
 /*@import '_tools/_t-reset';*/
+/* line 2, ../sass/_tools/_t-clear-fix.scss */
+.cf:before, .card-group:before, section:before, .cf:after, .card-group:after, section:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 8, ../sass/_tools/_t-clear-fix.scss */
+.cf:after, .card-group:after, section:after {
+  clear: both;
+}
+
 /*color*/
 /*@second_color: white;
 @second_text_color: #333;
@@ -20,84 +32,140 @@ footer {
 }
 /* line 8, ../sass/02_molecules/_m-footer.scss */
 footer p.copyright {
-  margin: 15px 0 0;
-}
-
-/*_m-header.scss*/
-/* line 3, ../sass/02_molecules/_m-header.scss */
-.intro-header {
-  padding-top: 40px;
-  text-align: center;
-  color: #f8f8f8;
-}
-
-/* line 9, ../sass/02_molecules/_m-header.scss */
-.header-container {
-  width: 100%;
-}
-/* line 12, ../sass/02_molecules/_m-header.scss */
-.header-container .intro-image {
-  height: 100%;
-  min-height: 380px;
-  margin-top: 20px;
-  background: url("../images/ioBUILDERS-white.svg") no-repeat center;
-}
-/* line 19, ../sass/02_molecules/_m-header.scss */
-.header-container .intro-message {
-  margin-top: 150px;
-  color: #e3e3e3;
-  text-align: left;
-}
-/* line 24, ../sass/02_molecules/_m-header.scss */
-.header-container .intro-message > h1 {
-  font-family: -apple-system-subheadline, 'HelveticaNeue-UltraLight', 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 2.3em;
-}
-/* line 29, ../sass/02_molecules/_m-header.scss */
-.header-container .intro-message > h3 {
-  font-family: -apple-system-headline, 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, sans-serif;
-}
-/* line 33, ../sass/02_molecules/_m-header.scss */
-.header-container .intro-message .intro-divider {
-  width: 80%;
-  border-top: 1px solid #e3e3e3;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
 }
 
 /*_m-card.scss*/
 /* line 3, ../sass/02_molecules/_m-card.scss */
 .card {
-  width: auto;
+  width: 60%;
   padding: 30px;
   border-radius: 2px;
   background-image: linear-gradient(72deg, #f0f0f0, #BDC3C7);
   margin: 10px;
   box-shadow: 0 0 5px rgba(66, 66, 66, 0.2);
 }
+/* line 10, ../sass/02_molecules/_m-card.scss */
+.card.a {
+  float: left;
+}
+/* line 11, ../sass/02_molecules/_m-card.scss */
+.card.b {
+  float: right;
+}
+/* line 12, ../sass/02_molecules/_m-card.scss */
+.card img {
+  width: 65px;
+  float: left;
+  margin-right: 10px;
+  opacity: .6;
+}
+/* line 18, ../sass/02_molecules/_m-card.scss */
+.card h3 {
+  color: #2574A9;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+/*_m-menu.scss*/
+/* line 3, ../sass/02_molecules/_m-menu.scss */
+.navbar-default {
+  background-color: #2f90d2;
+  border: 0;
+}
+/* line 7, ../sass/02_molecules/_m-menu.scss */
+.navbar-default .navbar-toggle {
+  margin-right: 0;
+  border: 0;
+}
+/* line 11, ../sass/02_molecules/_m-menu.scss */
+.navbar-default .navbar-toggle span.icon-bar {
+  background-color: #e3e3e3;
+}
+/* line 15, ../sass/02_molecules/_m-menu.scss */
+.navbar-default .navbar-toggle:hover {
+  background-color: #e3e3e3;
+}
+/* line 17, ../sass/02_molecules/_m-menu.scss */
+.navbar-default .navbar-toggle:hover span.icon-bar {
+  background-color: #2f90d2;
+}
+/* line 23, ../sass/02_molecules/_m-menu.scss */
+.navbar-default .navbar-brand {
+  background: url("../images/ioBUILDERS-text-white.svg") no-repeat center;
+  width: 200px;
+}
+/* line 29, ../sass/02_molecules/_m-menu.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+/*_m-header.scss*/
+/* line 3, ../sass/03_organisms/_o-header.scss */
+.intro-header {
+  padding-top: 40px;
+  text-align: center;
+  color: #f8f8f8;
+}
+
+/* line 9, ../sass/03_organisms/_o-header.scss */
+.header-container {
+  width: 100%;
+}
+/* line 12, ../sass/03_organisms/_o-header.scss */
+.header-container .intro-image {
+  height: 100%;
+  min-height: 380px;
+  margin-top: 20px;
+  background: url("../images/ioBUILDERS-white.svg") no-repeat center;
+}
+/* line 19, ../sass/03_organisms/_o-header.scss */
+.header-container .intro-message {
+  margin-top: 177px;
+  color: #e3e3e3;
+  text-align: left;
+}
+/* line 24, ../sass/03_organisms/_o-header.scss */
+.header-container .intro-message > h1 {
+  font-size: 2.3em;
+  letter-spacing: -4px;
+}
+/* line 25, ../sass/03_organisms/_o-header.scss */
+.header-container .intro-message > h3 {
+  letter-spacing: -2px;
+}
+/* line 27, ../sass/03_organisms/_o-header.scss */
+.header-container .intro-message .intro-divider {
+  width: 80%;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  float: left;
+  margin: 8px 0 0 0;
+}
 
 /*_o-card-group.scss*/
 /* line 3, ../sass/03_organisms/_o-card-group.scss */
 .card-group {
-  display: flex;
+  background-color: #e3e3e3;
+  overflow: hidden;
 }
 
 /*_t-container.scss*/
 /* line 3, ../sass/04_templates/_t-container.scss */
 .container {
-  width: 900px;
   line-height: 1.2em;
 }
-/* line 7, ../sass/04_templates/_t-container.scss */
+/* line 6, ../sass/04_templates/_t-container.scss */
 .container ul {
   line-height: 1.6em;
 }
-/* line 11, ../sass/04_templates/_t-container.scss */
+/* line 10, ../sass/04_templates/_t-container.scss */
 .container pre {
   margin-top: 20px;
   margin-bottom: 20px;
   line-height: 1.6em;
 }
-/* line 17, ../sass/04_templates/_t-container.scss */
+/* line 16, ../sass/04_templates/_t-container.scss */
 .container h3 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -106,10 +174,31 @@ footer p.copyright {
 /*_p-index.scss*/
 /* line 3, ../sass/05_pages/_p-index.scss */
 section {
-  min-height: 77vh;
+  min-height: 95vh;
+}
+/* line 8, ../sass/05_pages/_p-index.scss */
+section .intro-header:after {
+  content: '';
+  position: absolute;
+  left: -300px;
+  top: 5px;
+  width: 600px;
+  height: 600px;
+  background: url("../images/world.svg") no-repeat;
+  opacity: .7;
+  animation: rotate 250s infinite;
+  animation-timing-function: linear;
 }
 
-/* line 19, ../sass/base.scss */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* line 22, ../sass/base.scss */
 body, html {
   width: 100%;
   height: 100%;
@@ -118,17 +207,17 @@ body, html {
   background-color: #2574A9;
 }
 
-/* line 27, ../sass/base.scss */
+/* line 30, ../sass/base.scss */
 body, h1, h2, h3, h4, h5, h6 {
-  font-family: -apple-system-headline, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Montserrat', -apple-system-headline, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-/* line 31, ../sass/base.scss */
+/* line 34, ../sass/base.scss */
 h1, h2 {
   color: #2C3E50;
 }
 
-/* line 32, ../sass/base.scss */
+/* line 35, ../sass/base.scss */
 h3 {
   color: #e3e3e3;
 }
