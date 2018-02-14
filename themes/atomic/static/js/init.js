@@ -1,3 +1,5 @@
 /*init.js*/
 
-AOS.init();
+AOS.init({
+	disable: 'mobile'
+});

@@ -24,7 +24,21 @@ body, html {
     height: 100%;
     font-size: 16px;
     color: $text-color;
-    background-color: $primary-color;
+    position: relative;
+    background-color: #a9b7c4;
+}
+
+body::before {
+    background-image: url('../images/backs/lights.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(.3) hue-rotate(200deg);
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: .6;
+    animation: move-jelly 300s infinite;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -33,3 +47,15 @@ body, h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {color: $secondary-color;}
 h3 {color: $white;}
+
+@keyframes move-jelly {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
